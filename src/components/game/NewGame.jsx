@@ -20,13 +20,11 @@ function NewGame({player_hand, computer_hand}) {
     })
   
     }, [token])  
-
     
   return (
     <div>
      
     <DealCards player_hand={player_hand} computer_hand={computer_hand} />
-
 
     </div>
   

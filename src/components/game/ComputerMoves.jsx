@@ -11,16 +11,9 @@ function ComputerMoves({props}) {
           headers:{
             "Authorization": `Bearer ${token}`
           }
-
-        })
-        .then(function(res){
-            setMove(res.data)
-            
-        
            
-        })
-        .catch(function(err){
-          console.log(err);
+
+  
         })
     }, [])
   }

@@ -50,10 +50,18 @@ function DealCards() {
             });
       
       
-            setTableCards(function(prevTableCards) {
-              return [...prevTableCards, [rank, suit]];
-            });
+            setTableCards(prevTablCard =>(
+            prevTablCard.concat([[rank, suit]])
+          )
+            );
 
+          }
+         
+        if (res.data.penalty && res.data.penalty.length > 0) {
+          setComputerHand(prevHand=>
+            prevHand.concat(res.data.penalty)
+            
+          )
           }
         else{
             console.log("Invalid move");
@@ -64,8 +72,6 @@ function DealCards() {
         console.log("err", err.message);
       })
 
-  
-      
       
     }
   return (
