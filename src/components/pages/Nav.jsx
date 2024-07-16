@@ -13,7 +13,7 @@ function Nav() {
         <BrowserRouter>
         <Routes>
             <Route path='/login' element={<Login />} />
-            <Route path='dashboard' element={<Dashboard />} />
+            <Route path='/' element={<Dashboard />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/moves' element={<ComputerMoves />} />
         </Routes>
